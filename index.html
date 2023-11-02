@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <ul id="todoList"></ul>
-     
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- <ul id="todoList"></ul> -->
 
-    <table id="table">
+    <!-- <table id="table">
         <thead>
             <th>id</th>
             <th>Name</th>
@@ -23,16 +22,40 @@
 
         </tbody>
 
-    </table>
+    </table> -->
 
-
-    <p id="counter"></p>
+    <!-- <p id="counter"></p>
     <button id="btnZero">0lamaq</button>
     <button id="btnStart">start</button>
-    <button id="btnStop">stop</button>
+    <button id="btnStop">stop</button> -->
+
+    <h1>CRUD</h1>
+    <label for="">Description</label>
+    <input type="text" id="descriptionInput" />
+
+    <label for="">Name</label>
+    <input type="text" id="nameInput" />
+    <button onclick="createPost()">Create</button>
+    <button onclick="updatePost()">Uptdae</button>
+
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>description</th>
+                <th>name</th>
+                <th>Actions</th>
+                
+            </tr>
+        </thead>
+        <tbody id="data-table">
+
+
+        </tbody>
+    </table>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src="./assets/js/count.js"></script>
-</body>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>

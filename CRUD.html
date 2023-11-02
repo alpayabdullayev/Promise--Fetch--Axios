@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CRUD</h1>
+    <label for="">USerlar</label>
+    <select name="" id="">
+        <option value=""></option>
+    </select>
+
+    <label for="">Name</label>
+    <input type="text" id="nameInput">
+
+    <label for="">Title</label>
+    <input type="text" id="titleInput">
+    <button onclick="createPost()">Create</button>
+    <button onclick="updatePost()">Uptdae</button>
+
+
+
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Buttons</th>
+            </tr>
+        </thead>
+        <tbody id="data-table">
+
+
+        </tbody>
+        <tbody></tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/CRUD.JS"></script>
+</body>
+</html>
